@@ -3,8 +3,10 @@
     <iframe src="https://blog.0xrudrapratap.ninja/poc/1.html" id="test"> </iframe>
     <script>
         
-        var wn = document.getElementsByTagName("iframe")[0].contentWindow;
-        //xss = wn.postMessage("testing","*");
+        var win = document.getElementsByTagName("iframe")[0].contentWindow;
+        setTimeout(function() {
+        win.postMessage("testing","*");
+    }, 500);
         
         function receiveMessage(event) {
             console.log(event.data);

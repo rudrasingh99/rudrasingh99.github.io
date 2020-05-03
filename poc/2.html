@@ -1,6 +1,7 @@
 <script>
 
 window.addEventListener("message", receiveMessage, false);
+  top.postMessage("message from iframe", "https://blog.0xrudrapratap.ninja");
 function receiveMessage(event) {
   if (event.origin !== "https://blog.0xrudrapratap.ninja")
     return;

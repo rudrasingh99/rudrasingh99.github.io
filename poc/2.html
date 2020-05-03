@@ -4,10 +4,10 @@
     <script>
         window.addEventListener("message", receiveMessage, false);
         var wn = document.getElementsByTagName("iframe")[0].contentWindow;
-        var win = wn.postMessage("testing","*");
+        wn.postMessage("testing","*");
         
         function receiveMessage(event) {
-        console.log("Output:" + event.data[1]);
+        console.log("Output:" + event.data[]);
         }
     </script>
 </body>

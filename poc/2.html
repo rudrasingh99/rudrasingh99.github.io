@@ -2,7 +2,7 @@
   
 xss = window.open("https://blog.0xrudrapratap.ninja/poc/2.html");
 window.addEventListener("message", receiveMessage, false);
-xss.postMessage("message from iframe", "https://blog.0xrudrapratap.ninja");
+window.parent.postMessage("message from iframe", "https://blog.0xrudrapratap.ninja");
 function receiveMessage(event) {
   if (event.origin !== "https://blog.0xrudrapratap.ninja")
     return;

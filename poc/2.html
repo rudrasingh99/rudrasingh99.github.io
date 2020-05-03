@@ -7,7 +7,8 @@
         wn.postMessage("testing","*");
         
         function receiveMessage(event) {
-        console.log("Output:" + event.origin);
+        console.log("Output:" + event.data);
+        console.log(Object.getOwnPropertyNames(event.data));
         }
     </script>
 </body>

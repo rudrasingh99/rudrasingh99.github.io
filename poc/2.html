@@ -1,14 +1,13 @@
-<h2> Pwning PostMessages </h2>
-<iframe src="https://blog.0xrudrapratap.ninja/poc/1.html" id="test"> </iframe>
-
-
-
-<script>
-window.addEventListener("message", receiveMessage, false);
-var wn = document.getElementsByTagName("iframe")[0].contentWindow;
-console.log(wn);
-wn.postMessage("testing","*");
-function receiveMessage(event) {
-console.log(event.data);
-}
-</script>
+<body>
+    <h2> Pwning PostMessages </h2>
+    <iframe src="https://blog.0xrudrapratap.ninja/poc/1.html" id="test"> </iframe>
+    <script>
+        window.addEventListener("message", receiveMessage, false);
+        var wn = document.getElementsByTagName("iframe")[0].contentWindow;
+        console.log(wn);
+        wn.postMessage("testing","*");
+        function receiveMessage(event) {
+        console.log(event.data);
+        }
+    </script>
+</body>

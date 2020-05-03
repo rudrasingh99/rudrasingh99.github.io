@@ -1,6 +1,7 @@
 <script>
 window.addEventListener("message", receiveMessage, false);
-window.parent.postMessage("message from iframe", "https://blog.0xrudrapratap.ninja");
+var wn = document.getElementById('ifrm').contentWindow;
+wn.postMessage("I AM TEST","https://blog.0xrudrapratap.ninja");
 function receiveMessage(event) {
   console.log(event.data);
 }

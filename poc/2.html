@@ -7,9 +7,8 @@
         wn.postMessage("testing","*");
         
         function receiveMessage(event) {
-        for (key in event.data){
-            alert("key: " + key + " value :" + Object.keys(event.data[key]).join(' '));
-            }
-        }
+        {
+    console.log(event); 
+   }
     </script>
 </body>

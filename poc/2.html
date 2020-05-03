@@ -1,6 +1,4 @@
 <script>
-  
-xss = window.open("https://blog.0xrudrapratap.ninja/poc/2.html");
 window.addEventListener("message", receiveMessage, false);
 window.parent.postMessage("message from iframe", "https://blog.0xrudrapratap.ninja");
 function receiveMessage(event) {

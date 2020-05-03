@@ -2,8 +2,6 @@
 window.addEventListener("message", receiveMessage, false);
 window.parent.postMessage("message from iframe", "https://blog.0xrudrapratap.ninja");
 function receiveMessage(event) {
-  if (event.origin !== "https://blog.0xrudrapratap.ninja")
-    return;
   console.log(event.data);
 }
 </script>

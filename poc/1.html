@@ -2,7 +2,7 @@
 var token = "super_secret_token";
 
 function receiveMessage(event) {
-    event.source.postMessage(token, event.origin);
+    event.source.postMessage(token, "*");
     console.log(event.origin);
 }
 window.addEventListener("message", receiveMessage, false);

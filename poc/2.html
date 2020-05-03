@@ -1,6 +1,7 @@
 <script>
 window.addEventListener("message", receiveMessage, false);
-var wn = document.getElementById('test').contentWindow;
+var wn = document.getElementsByTagName("iframe")[0].contentWindow;
+;
 wn.postMessage("testing","*");
 function receiveMessage(event) {
 console.log(event.data);

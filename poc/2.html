@@ -2,9 +2,9 @@
 
 window.addEventListener("message", receiveMessage, false);
 function receiveMessage(event) {
-  window.open('https://blog.0xrudrapratap.ninja/poc/1.html');
   if (event.origin !== "https://blog.0xrudrapratap.ninja")
     return;
   console.log(event.data);
 }
 </script>
+<iframe src="https://blog.0xrudrapratap.ninja/poc/1.html"/>

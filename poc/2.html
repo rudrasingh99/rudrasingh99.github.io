@@ -7,7 +7,7 @@
         xss = wn.postMessage("testing","*");
         
         function receiveMessage(event) {
-            console.log(event);
+            console.log(event.data);
           
    }
         window.addEventListener('message',receiveMessage,false);

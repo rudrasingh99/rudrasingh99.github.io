@@ -1,9 +1,9 @@
 <script>
 window.addEventListener("message", receiveMessage, false);
 var wn = document.getElementById('test').contentWindow;
-wn.postMessage("I AM TEST","https://blog.0xrudrapratap.ninja");
+wn.postMessage("testing","*");
 function receiveMessage(event) {
-  console.log(event.data);
+console.log(event.data);
 }
 </script>
 <iframe src="https://blog.0xrudrapratap.ninja/poc/1.html" id="test" />

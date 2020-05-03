@@ -1,3 +1,8 @@
+<h2> Pwning PostMessages </h2>
+<iframe src="https://blog.0xrudrapratap.ninja/poc/1.html" id="test" />
+
+
+
 <script>
 window.addEventListener("message", receiveMessage, false);
 var wn = document.getElementsByTagName("iframe")[0].contentWindow;
@@ -7,5 +12,3 @@ function receiveMessage(event) {
 console.log(event.data);
 }
 </script>
-<h2> Pwning PostMessages </h2>
-<iframe src="https://blog.0xrudrapratap.ninja/poc/1.html" id="test" />

@@ -4,7 +4,7 @@
     <script>
         
         var wn = document.getElementsByTagName("iframe")[0].contentWindow;
-        wn.postMessage("testing","*");
+        xss = wn.postMessage("testing","*");
         
         function receiveMessage(event) {
             console.log(event.data);
